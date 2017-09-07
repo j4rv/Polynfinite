@@ -1,7 +1,7 @@
 import logging
 
 
-logging.basicConfig(filename='log.log', level=logging.INFO, format="[%(levelname)s]: %(message)s")
+logging.basicConfig(filename='log.log', level=logging.INFO, format="[%(levelname)s] %(message)s")
 def logSavedImage(fileName, sizeX, sizeY, oversampling, backgroundColor, polygon, lineWidth, ratio, iterations):
     print("Saved image: " + fileName)
 

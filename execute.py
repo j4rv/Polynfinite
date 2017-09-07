@@ -19,4 +19,4 @@ for _ in range(IMAGES_TO_CREATE):
         image = image.resize((FINAL_SIZE_X, FINAL_SIZE_Y), resample=Image.BICUBIC)
 
     image.save(SAVE_FOLDER + fileName, "PNG")
-    Logger.logSavedImage(fileName, FINAL_SIZE_X, FINAL_SIZE_Y, OVERSAMPLING, BACKGROUND_COLOR, polygon, RATIO, LINE_WIDTH, ITERATIONS)
+    Logger.logSavedImage(fileName, FINAL_SIZE_X, FINAL_SIZE_Y, OVERSAMPLING, BACKGROUND_COLOR, polygon, LINE_WIDTH, RATIO, ITERATIONS)

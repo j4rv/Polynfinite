@@ -9,7 +9,7 @@ Background color: (0, 0, 0)
 Oversampling: 10  
 Polygon used: [(-4005, -504), (-7505, 4612), (36468, -3867), (8344, 20502), (21456, 14881)]  
 Line width: 1.  
-Ratio: 1.  
+Ratio: 0.01.  
 Iterations: 1000.  
 (Colors: red=0, green="CENTER", blue=255)  
 
@@ -19,8 +19,8 @@ Size: 1920x1080.
 Background color: (0, 0, 0)  
 Oversampling: 2  
 Polygon used: [(-2028, 3629), (3317, 3666), (5134, 4074), (6086, 2574), (1142, -761)]  
-Line width: 0.01.  
-Ratio: 2.  
+Line width: 2.  
+Ratio: 0.01.  
 Iterations: 100.  
 (Colors: red="CENTER", green="EXTERIOR", blue=255)  
 
@@ -30,8 +30,8 @@ Size: 640x480.
 Background color: (0, 0, 0)  
 Oversampling: 1  
 Polygon used: [(-594, 80), (463, 682), (-599, 833), (1151, 96), (575, -366), (914, 910)]  
-Line width: 0.05.  
-Ratio: 1.  
+Line width: 1.  
+Ratio: 0.05.  
 Iterations: 64.  
 (Colors: red=255, green=255, blue=255)  
 
