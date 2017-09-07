@@ -1,3 +1,4 @@
+import sys
 from Polynfinite.Drawer import polynfinite
 from Polynfinite import Logger
 from Polynfinite.RandomUtils import randomFilename, randomPolygon
@@ -7,6 +8,7 @@ from PIL import Image
 
 _SIZE_X = FINAL_SIZE_X * OVERSAMPLING
 _SIZE_Y = FINAL_SIZE_Y * OVERSAMPLING
+
 sys.setrecursionlimit(10000) #To allow a high number of iterations.
 
 
