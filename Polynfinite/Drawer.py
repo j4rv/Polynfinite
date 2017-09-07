@@ -22,6 +22,8 @@ def _polynfiniteFromPolygonRecursive(draw, poly, ratio, width, n, maxN):
     firstP = None
     lastP = None
     subPoly = []
+    #This controls the colors used for each line
+    #TODO: Make it configurable from Options.py
     color = Colors.gradientColor(n, maxN, red="CENTER", green="BORDER", blue=255)
 
     for p in poly:

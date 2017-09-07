@@ -1,3 +1,7 @@
+# Ignore log and renders
+*.log
+*.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
