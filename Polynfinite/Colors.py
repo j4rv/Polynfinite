@@ -1,4 +1,4 @@
-import random
+from Polynfinite.RandomUtils import randomRange
 
 BLACK = (0,0,0)
 WHITE = (255,255,255)
@@ -12,9 +12,9 @@ def gradientColor(currentIteration, maxIteration, red="255", green="255", blue=2
 
 
 def randomColor(n):
-    red = random.randrange(0,255)
-    green = random.randrange(0,255)
-    blue = random.randrange(0,255)
+    red = randomRange(0,255)
+    green = randomRange(0,255)
+    blue = randomRange(0,255)
     color = (red, green, blue)
     return color
 

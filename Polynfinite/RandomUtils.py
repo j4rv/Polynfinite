@@ -1,12 +1,15 @@
-import random
 import string
+from secrets import randbelow, choice
 
 def randomFilename():
-    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(8)) + ".png"
+    return ''.join(choice(string.ascii_uppercase + string.digits) for _ in range(8)) + ".png"
 
 def randomPolygon(minVertices, maxVertices, sizeX, sizeY):
     res = []
-    nVertices = random.randrange(minVertices, maxVertices)
-    for i in range (0, nVertices):
-        res.append((random.randrange(-sizeX, sizeX * 2), random.randrange(-sizeY, sizeY * 2)))
+    nVertices = randomRange(minVertices, maxVertices)
+    for _ in range (0, nVertices):
+        res.append((randomRange(-sizeX, sizeX * 2), randomRange(-sizeY, sizeY * 2)))
     return res
+
+def randomRange(min, max):
+    return randbelow(max - min) + min

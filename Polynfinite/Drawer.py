@@ -6,9 +6,9 @@ def drawLine(draw, p, p2, width, color):
     draw.line((p[0], p[1], p2[0], p2[1]), fill=color, width=int(width))
 
 
-def drawAndAddToList(draw, p, p2, list, ratio, width, color):
+def drawAndAddToList(draw, p, p2, vertexList, ratio, width, color):
     drawLine(draw, p, p2, width, color)
-    list.append((p[0] * ratio + (1 - ratio) * p2[0], p[1] * ratio + (1 - ratio) * p2[1]))
+    vertexList.append((p[0] * ratio + (1 - ratio) * p2[0], p[1] * ratio + (1 - ratio) * p2[1]))
 
 
 def polynfinite(sizeX, sizeY, bgColor, poly, ratio, width, n):
