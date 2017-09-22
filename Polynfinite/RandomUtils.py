@@ -11,5 +11,5 @@ def randomPolygon(minVertices, maxVertices, sizeX, sizeY):
         res.append((randomRange(-sizeX, sizeX * 2), randomRange(-sizeY, sizeY * 2)))
     return res
 
-def randomRange(min, max):
-    return randbelow(max - min) + min
+def randomRange(minimum, maximum):
+    return randbelow(maximum - minimum) + minimum
