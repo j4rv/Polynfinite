@@ -1,4 +1,7 @@
 # Polynfinite
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e78230f56944148a471d5bcfd565db1)](https://www.codacy.com/app/J4RV/Polynfinite?utm_source=github.com&utm_medium=referral&utm_content=J4RV/Polynfinite&utm_campaign=badger)
+
 A python script that creates wallpapers using a base polygon
 
 
