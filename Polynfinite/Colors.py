@@ -6,9 +6,9 @@ WHITE = (255,255,255)
 GRADIENT_FROM_CENTER = "CENTER"
 GRADIENT_FROM_EXTERIOR = "EXTERIOR"
 
-def gradientColor(currentIteration, maxIteration, red="255", green="255", blue=255):
+def gradientColor(currentIteration, maxIteration, red="255", green="255", blue=255, alpha=255):
     bnColor = int((maxIteration - currentIteration) * 255.0 / maxIteration)
-    return (_valueToGradientValue(red, bnColor), _valueToGradientValue(green, bnColor), _valueToGradientValue(blue, bnColor))
+    return (_valueToGradientValue(red, bnColor), _valueToGradientValue(green, bnColor), _valueToGradientValue(blue, bnColor), _valueToGradientValue(alpha, bnColor))
 
 
 def randomColor(n):

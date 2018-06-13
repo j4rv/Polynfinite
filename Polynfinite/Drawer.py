@@ -12,7 +12,7 @@ def drawAndAddToList(draw, p, p2, vertexList, ratio, width, color):
 
 
 def polynfinite(sizeX, sizeY, bgColor, poly, ratio, width, n):
-    im = Image.new('RGB', (sizeX, sizeY), bgColor)
+    im = Image.new('RGBA', (sizeX, sizeY), bgColor)
     draw = ImageDraw.Draw(im)
     _polynfiniteFromPolygonRecursive(draw, poly, ratio, width, n, n)
     return im
@@ -27,7 +27,8 @@ def _polynfiniteFromPolygonRecursive(draw, poly, ratio, width, n, maxN):
     color = Colors.gradientColor(n, maxN,
                                  red=   Colors.GRADIENT_FROM_CENTER,
                                  green= Colors.GRADIENT_FROM_EXTERIOR,
-                                 blue=  255)
+                                 blue=  255,
+                                 alpha= Colors.GRADIENT_FROM_CENTER)
 
     for p in poly:
         if lastP:
